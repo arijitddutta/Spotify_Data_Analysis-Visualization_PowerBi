@@ -1,26 +1,20 @@
 # 🎵 Spotify Global Top 50 — Power BI Dashboard
 
-![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-Analysis-117865)
-![Power Query](https://img.shields.io/badge/Power%20Query-Data%20Cleaning-217346)
-
-An interactive Power BI dashboard analyzing **27,800 chart entries** from Spotify's Global Top 50 (May 2023 – Nov 2024), covering 794 songs and 343 artists. Built to uncover patterns in song popularity, artist dominance, chart longevity, and release trends.
-
 ## 📸 Preview
 
 **Overview Page**
-![Overview](Screenshots/overview.png)
+!\[Overview](Screenshots/overview.png)
 
 **Home / Landing Page**
-![Home](Screenshots/home.png)
+!\[Home](Screenshots/home.png)
 
 ## 🎯 What It Answers
 
-- Which songs and artists dominate the Global Top 50?
-- How does popularity vary by chart position, month, and quarter?
-- Do explicit songs perform differently from non-explicit ones?
-- How long do songs stay on the chart, and how fast do new releases enter it?
-- Album vs. single vs. compilation performance
+* Which songs and artists dominate the Global Top 50?
+* How does popularity vary by chart position, month, and quarter?
+* Do explicit songs perform differently from non-explicit ones?
+* How long do songs stay on the chart, and how fast do new releases enter it?
+* Album vs. single vs. compilation performance
 
 ## 🛠️ Built With
 
@@ -28,33 +22,33 @@ An interactive Power BI dashboard analyzing **27,800 chart entries** from Spotif
 
 ## 🧹 Data Prep
 
-- Cleaned and validated types (dates, duration, boolean explicit flag)
-- Converted track duration from ms → minutes
-- Built a dedicated Date table linked 1:* to the fact table
-- Structured a separate `_Measure` table to keep DAX organized
+* Cleaned and validated types (dates, duration, boolean explicit flag)
+* Converted track duration from ms → minutes
+* Built a dedicated Date table linked 1:\* to the fact table
+* Structured a separate `\_Measure` table to keep DAX organized
 
 ## 🧮 Key DAX Measures
 
 Chart performance (`#1 Entries`, `Top 10 Entries`, `Distinct Songs per Artist`), song characteristics (`% Explicit Entries`, `Avg Duration`), and time intelligence (`7-Day Moving Avg Popularity`, `Popularity Change vs. Previous Day`).
 
-> **Note:** Chart *entries* ≠ unique *songs* — a song charting for 100 days = 100 entries but 1 unique song. This distinction drives the longevity and dominance metrics throughout the dashboard.
+> \*\*Note:\*\* Chart \*entries\* ≠ unique \*songs\* — a song charting for 100 days = 100 entries but 1 unique song. This distinction drives the longevity and dominance metrics throughout the dashboard.
 
 ## 📈 Dashboard Pages
 
-| Page | Focus |
-|---|---|
-| **Overview** | KPIs, top songs/artists, format & popularity breakdowns |
-| **Artists** | Chart presence, dominance, songs per artist *(in progress)* |
-| **Songs** | Longevity, position trends, explicit vs. non-explicit performance *(in progress)* |
+|Page|Focus|
+|-|-|
+|**Overview**|KPIs, top songs/artists, format \& popularity breakdowns|
+|**Artists**|Chart presence, dominance, songs per artist *(in progress)*|
+|**Songs**|Longevity, position trends, explicit vs. non-explicit performance *(in progress)*|
 
 ## 🗂️ Dataset
 
-| Metric | Value |
-|---|---:|
-| Chart Entries | 27,800 |
-| Distinct Songs | 794 |
-| Distinct Artists | 343 |
-| Period | May 2023 – Nov 2024 |
+|Metric|Value|
+|-|-:|
+|Chart Entries|27,800|
+|Distinct Songs|794|
+|Distinct Artists|343|
+|Period|May 2023 – Nov 2024|
 
 ## 📁 Repository Structure
 
@@ -62,15 +56,15 @@ Chart performance (`#1 Entries`, `Top 10 Entries`, `Distinct Songs per Artist`),
 Spotify-PowerBI-Dashboard/
 ├── README.md
 ├── Dataset/spotify-top-50-world.csv
-├── PowerBI/Spotify_Global_Top50.pbix
+├── PowerBI/Spotify\_Global\_Top50.pbix
 └── Screenshots/
 ```
 
 ## 💡 Future Improvements
 
-- Artist & song drill-through pages
-- Ranking movement analysis
-- Audio features (danceability, energy, valence)
+* Artist \& song drill-through pages
+* Ranking movement analysis
+* Audio features (danceability, energy, valence)
 
 ## 👨‍💻 Author
 
@@ -78,3 +72,4 @@ Spotify-PowerBI-Dashboard/
 [GitHub](https://github.com/arijitddutta)
 
 ⭐ If you find this useful, consider starring the repo!
+
