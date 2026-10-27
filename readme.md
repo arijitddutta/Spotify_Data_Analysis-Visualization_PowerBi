@@ -2,11 +2,21 @@
 
 ## 📸 Preview
 
+**Home / Landing Page**
+![Home](Screenshots/home.png)
+
+
 **Overview Page**
 ![Overview](Screenshots/overview.png)
 
-**Home / Landing Page**
-![Home](Screenshots/home.png)
+**Artists Page**
+![Artists](Screenshots/Artists.png)
+
+
+**Songs Page**
+![Songs](Screenshots/Songs.png)
+
+
 
 ## 🎯 What It Answers
 
