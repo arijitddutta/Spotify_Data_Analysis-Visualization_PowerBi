@@ -3,10 +3,10 @@
 ## 📸 Preview
 
 **Overview Page**
-!\[Overview](Screenshots/overview.png)
+![Overview](Screenshots/overview.png)
 
 **Home / Landing Page**
-!\[Home](Screenshots/home.png)
+![Home](Screenshots/home.png)
 
 ## 🎯 What It Answers
 
